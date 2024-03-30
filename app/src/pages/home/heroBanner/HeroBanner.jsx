@@ -11,17 +11,13 @@ const HeroBanner = () => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
-  const { data, loading } = useFetch("/movie/upcoming");
+  const { data, loading } = useFetch("/movie/popular");
 
   useEffect(() => {
-    if (data && data.results && data.results.length >= 20) {
-      const bg =
-        url?.backdrop +
-        data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
-      setBackground(bg);
-    } else {
-      setBackground("../../../assets/placeholder.jpg");
-    }
+    const bg =
+      url.backdrop +
+      data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
+    setBackground(bg);
   }, [data]);
 
   const searchQueryHandler = (event) => {
@@ -34,19 +30,20 @@ const HeroBanner = () => {
     <div className="heroBanner">
       {!loading && (
         <div className="backdrop-img">
-          <Img src={background} />
+          <Img src="https://image.tmdb.org/t/p/original/7d6EY00g1c39SGZOoCJ5Py9nNth.jpg" />
         </div>
       )}
       <div className="opacity-layer"></div>
 
       <ContentWrapper>
         <div className="heroBannerContent">
-          <span className="title">Welcome</span>
-          <span className="subTitle">movies to discover</span>
+          <span className="title">Welcome.</span>
+          <span className="subTitle">
+            Movies to search, explore and discover
+          </span>
           <div className="searchInput">
             <input
               type="text"
-              className="text"
               placeholder="Search for a movie"
               onChange={(e) => setQuery(e.target.value)}
               onKeyUp={searchQueryHandler}
