@@ -135,7 +135,7 @@ const Header = () => {
                 onClick={() =>
                   logout({ logoutParams: { returnTo: window.location.origin } })
                 }>
-                LogOut
+                Log out
               </li>
             </li>
           ) : (
