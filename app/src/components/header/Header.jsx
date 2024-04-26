@@ -87,7 +87,30 @@ const Header = () => {
           <img src={logo1} alt="" />
         </div>
         <ul className="menuItems">
-          <li className="menuItem">
+          <li>
+            {isAuthenticated && (
+              <li className="menuItem">
+                <HiOutlineSearch onClick={openSearch} />
+              </li>
+            )}
+          </li>
+          <li>
+            {isAuthenticated && (
+              <li
+                className="menuItem"
+                onClick={() => navigationHandler("movie")}>
+                Movies
+              </li>
+            )}
+          </li>
+          <li>
+            {isAuthenticated && (
+              <li className="menuItem" onClick={() => navigationHandler("tv")}>
+                TV Shows
+              </li>
+            )}
+          </li>
+          {/* <li className="menuItem">
             <HiOutlineSearch onClick={openSearch} />
           </li>
           <li className="menuItem" onClick={() => navigationHandler("movie")}>
@@ -96,7 +119,8 @@ const Header = () => {
           <li className="menuItem" onClick={() => navigationHandler("tv")}>
             TV Shows
           </li>
-          <li>
+          <li> */}
+            <li>
             {isAuthenticated && (
               <div>
                 <p className="menuItem">{user.nickname}</p>
