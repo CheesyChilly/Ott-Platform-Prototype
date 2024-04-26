@@ -21,22 +21,28 @@ const Footer = () => {
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
-          This is a demo movie streaming website that uses tmdb movie database.
+          This is a demo movie streaming website made by Ankit and Shibasish.
         </div>
         <div className="socialIcons">
           <span className="icon">
-            <a href="http://www.google.com">
+            <a href="https://www.facebook.com/" >
               <FaFacebookF />
             </a>
           </span>
           <span className="icon">
-            <FaInstagram />
+            <a href="https://www.instagram.com/meta">
+              <FaInstagram />
+            </a>
           </span>
           <span className="icon">
-            <FaTwitter />
+            <a href="https://twitter.com/home">
+              <FaTwitter />
+            </a>
           </span>
           <span className="icon">
-            <FaLinkedin />
+            <a href="https://www.linkedin.com">
+              <FaLinkedin />
+            </a>
           </span>
         </div>
       </ContentWrapper>
