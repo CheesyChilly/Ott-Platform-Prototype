@@ -8,16 +8,21 @@ const About = () => {
   return (
     <div className="pageNotFound">
       <ContentWrapper>
-        <span className="smallText">About</span>
+        <span className="smallText">About us</span>
         <p className="para">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sitt nulla nec, mollis
-          pulvinar nulla. Praesent vel pharetra turpis. Ut a tempus turpis.
-          Nullam eget diam non ex dapibus gravida. Nullam mi lacus, egestas at
-          est vel, placerat malesuada augue. Phasellus tempor, quam eu lobortis
-          euismod, justo nisl convallis orci, sit amet ullamcorper
-          vitae ex faucibus nunc accumsan feugiat eget at tortor. Phasellus
-          dapibus enim et risus dapibus, vel tempor velit ullamcorper. Curabitur
-          tincidunt nisl quis elit viverra blandit.
+          Born from a shared passion for bringing exceptional entertainment to
+          the forefront, BitStream was established in 2024 by Ankit Bose and
+          Sibasish Dalui. Their vision was to create a one-stop streaming haven
+          overflowing with content that caters to every taste. BitStream takes
+          pride in its meticulously curated library, encompassing a vast array
+          of movies, captivating TV shows, documentaries that delve deep into
+          various subjects, and much more. <br/>This commitment to diversity ensures
+          there's always something fresh to discover, keeping viewers glued to
+          their screens. The BitStream team is dedicated to providing an
+          unparalleled streaming experience, prioritizing constant innovation
+          and expansion of their offerings. They strive to keep their audience
+          thoroughly entertained, ensuring every visit to the platform is a
+          delightful journey into a world of endless possibilities.
         </p>
       </ContentWrapper>
     </div>
